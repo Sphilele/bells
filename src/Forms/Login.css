@@ -1,0 +1,175 @@
+
+
+/* Smooth Transition for Opacity */
+.fade {
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.fade-in {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+  .log-container {
+    box-shadow: 0 0 16px 1px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 600px;
+    margin-top: 80px;
+    background: #fff;
+    padding: 20px;
+  }
+  
+  .log-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 9px;
+    width: 100%;
+    margin-top: 30px;
+  }
+  
+  .log-text {
+    color: #0A8754;
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+  
+  .underline {
+    width: 61px;
+    height: 6px;
+    background: #0A8754;
+    border-radius: 9px;
+  }
+  
+  .inputs {
+    margin-top: 55px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  
+  .input {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 90%;
+    max-width: 480px;
+    height: 80px;
+    background: #eaeaea;
+    border-radius: 6px;
+  }
+  
+  .log-icon {
+    margin: 0px 20px;
+    font-size: 1.5rem;
+  }
+  
+  .input input {
+    height: 50px;
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #797979;
+    font-size: 1.2rem;
+    font-family: 'Montserat', sans-serif;
+  }
+  
+  .forgot-password {
+    padding-left: 5%;
+    margin-top: 27px;
+    color: #797979;
+    font-size: 1rem;
+  }
+  
+  .forgot-password span {
+    color: #0A8754;
+    cursor: pointer;
+  }
+  
+  .submit-container {
+    display: flex;
+    gap: 30px;
+    margin: 60px auto;
+  }
+  
+  .submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    height: 59px;
+    color: #fff;
+    background: #0A8754;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 50px;
+    font-family: 'Montserat', sans-serif;
+  }
+  
+  .submit:hover {
+    background-color: #082D0F;
+    color: #fff;
+  }
+
+  .gray {
+    background-color: #eaeaea;
+    color: #676767;
+  }
+  
+  /* Small Devices (Phones, <768px) */
+  @media (max-width: 768px) {
+    .log-container {
+      width: 100%;
+      margin-top: 40px;
+      padding: 10px;
+    }
+  
+    .input {
+      width: 100%;
+      height: 60px;
+    }
+  
+    .input input {
+      font-size: 1rem;
+    }
+  
+    .log-text {
+      font-size: 2rem;
+    }
+  
+    .submit-container {
+      flex-direction: column;
+      gap: 10px; 
+    }
+  
+    .submit {
+      width: 220px; 
+    }
+  
+    .submit.gray {
+      margin-top: 10px; 
+    }
+  }
+  
+  /* Very Small Devices (Phones in portrait mode, <480px) */
+  @media (max-width: 480px) {
+    .log-text {
+      font-size: 1.8rem;
+    }
+  
+    .submit {
+      height: 50px;
+      font-size: 1rem;
+    }
+  
+    .input {
+      height: 50px;
+    }
+  }
+  

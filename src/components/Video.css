@@ -1,0 +1,133 @@
+/* Existing Styles */
+
+.video-container {
+  position: relative;
+  overflow: hidden;
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+  margin: 2rem 0;
+}
+
+.bg-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100vw; /* Full viewport width */
+  height: 100vh; /* Full viewport height */
+  object-fit: cover; /* Cover the container */
+  transform: translate(-50%, -50%); /* Center video */
+  z-index: -1; /* Keep the video behind the content */
+}
+
+.video-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5); /* White overlay with 50% opacity */
+  z-index: 0; /* Place overlay between video and content */
+}
+
+.content {
+  position: relative;
+  color: #111; /* Text color */
+  text-align: center;
+  font-family: 'Playfair Display', sans-serif;
+  z-index: 1; /* Ensure content is above the overlay */
+  padding: 0 1rem; /* Padding to prevent text from touching the edges */
+  margin-bottom: 28rem;
+}
+
+.video-heading {
+
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.video-paragraph {
+  font-size: 1.25rem;
+}
+
+/* Cards Styles */
+.cards-container {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: grid;
+  grid-template-columns: 1fr; /* Stack cards vertically */
+  gap: 1rem;
+  padding: 1rem;
+  z-index: 1; /* Ensure cards are above the video and overlay */
+  width: 100%; 
+  max-width: 600px; /* Set a maximum width for larger screens */
+  max-height: 80vh; /* Limit the height of the entire container */
+
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.6); /* Set card background color */
+  opacity: 1;
+  padding: 2rem; /* Add padding inside the card */
+  border-radius: 8px; /* Optional: rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: add a shadow */
+  max-height: 300px; /* Set maximum height for each card */
+
+}
+
+
+
+
+
+
+
+.card h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  font-family: "Montserrat", sans-serif;
+  color: #333; /* Dark gray text color for readability */
+}
+
+/* Responsive Design for Cards */
+
+@media (max-width: 768px) {
+  .card {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    padding: 0.5rem;
+  }
+}
+
+/* Responsive Adjustments for Existing Styles */
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem; /* Smaller heading on smaller screens */
+  }
+
+  p {
+    font-size: 1rem; /* Smaller text on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2rem; /* Even smaller heading on very small screens */
+  }
+
+  p {
+    font-size: 0.875rem; /* Even smaller text on very small screens */
+  }
+}

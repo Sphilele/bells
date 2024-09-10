@@ -1,0 +1,139 @@
+.home {
+    background-position: center center;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    height: 100vh;
+  
+}
+
+.story_image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.story__heading {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    color: #0A8754;
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 4rem;
+    z-index: 1;
+    max-width: 90%;
+}
+
+.story__content {
+    position: relative;
+}
+
+.story__content p {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    padding: 10px;
+    color: #EABE7C;
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    z-index: 1;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .story__heading {
+        font-size: 3.5rem;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 992px) {
+    .story__heading {
+        font-size: 3rem;
+        padding: 10px;
+    }
+
+    .story__content p {
+        font-size: 1rem;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 768px) {
+    .story__heading {
+        font-size: 2.5rem;
+        padding: 8px;
+    }
+
+    .story__content p {
+        font-size: 0.9rem;
+        padding: 6px;
+    }
+}
+
+@media (max-width: 576px) {
+    .story__heading {
+        font-size: 2rem;
+        padding: 5px;
+    }
+
+    .story__content p {
+        font-size: 0.8rem;
+        padding: 4px;
+    }
+}
+/* 
+second part */
+
+.story_container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.subheading {
+    font-size: 1.2rem;
+    color: #666;
+    margin: 2rem 0 0 0;
+    font-weight: 400;
+    font-family: "Monserat", sans-serif;
+}
+
+.secondary_heading h1{
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 2rem 0 2rem 0;
+    color: #222;
+    font-family: 'Playfair Display', sans-serif;
+}
+
+.secondary_content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #444;
+    font-family: 'Montserat', sans-serif;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.image-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; 
+}
